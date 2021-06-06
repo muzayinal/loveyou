@@ -52,10 +52,18 @@
 									    		imageUrl:"https://i.pinimg.com/originals/e5/22/14/e522145ca9fb5c121b2abec14b987910.gif",
 										    	title:"MAKASIH SAYANG",
 												animation: "slide-from-top",    
-												confirmButtonText: 'Next Ya',
+												confirmButtonText: 'Last',
 									            closeOnConfirm: false,
 										    })
-									    });
+									    }).then((result){
+										    Swal.fire({
+									    		imageUrl:"https://cdn-image.hipwee.com/wp-content/uploads/2015/07/unnamed-11.jpg",
+										    	
+												animation: "slide-from-top",    
+							
+									            showConfirmButton: false,
+										    })
+									});
 							    	}
 							    	if (result.value>=80) {
 							    		Swal.fire({
@@ -72,7 +80,23 @@
 												confirmButtonText: 'Next Ya',
 									            closeOnConfirm: false,
 										    })
-									    });
+									    }).then((result){
+
+										    Swal.fire({
+
+									    		imageUrl:"https://cdn-image.hipwee.com/wp-content/uploads/2015/07/unnamed-11.jpg",
+
+										    	
+
+												animation: "slide-from-top",    
+
+							
+
+									            showConfirmButton: false,
+
+										    })
+
+									});
 							    	}
 							    	if (result.value>=60 && result.value<=80) {
 							    		Swal.fire({
@@ -89,7 +113,15 @@
 												confirmButtonText: 'Next Ya',
 									            closeOnConfirm: false,
 										    })
-									    });
+									    }).then((result){
+										    Swal.fire({
+									    		imageUrl:"https://cdn-image.hipwee.com/wp-content/uploads/2015/07/unnamed-11.jpg",
+										    	
+												animation: "slide-from-top",    
+							
+									            showConfirmButton: false,
+										    })
+									});
 							    	}
 							    	if (result.value<=60) {
 							    		Swal.fire({
