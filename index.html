@@ -32,13 +32,30 @@
 					    	if (result.isConfirmed) {
 							    Swal.fire({
 							    	title:"Seberapa Besar Rasa Sayang Kamu Ke aku??",
-							    	text:"masukin angka 1 sampai 100",
+							    	text:"masukin angka 1 sampai 100 atau sayang banget",
 							    	input: 'text',
 							    	showCancelButton: true,
 									animation: "slide-from-top",    
 									confirmButtonText: 'Lanjut Aja Ya SAYANG',
 						            closeOnConfirm: false,
 							    }).then((result) =>{
+								    if (result.value>='sayang banget') {
+							    		Swal.fire({
+									    	title:"MELAYANG AKU KALO KAMU SAYANG SAMA AKU BEGINI.. ",
+									    	text:"Eh TAPI AKU LEBIH SAYANG SAMA KAMU MELEBIHI SAYANG KAMU KE AKU",
+											animation: "slide-from-top",    
+											confirmButtonText: 'Next Ya',
+								            closeOnConfirm: false,
+									    }).then((result) =>{
+									    	Swal.fire({
+									    		imageUrl:"https://i.pinimg.com/originals/e5/22/14/e522145ca9fb5c121b2abec14b987910.gif",
+										    	title:"MAKASIH SAYANG",
+												animation: "slide-from-top",    
+												confirmButtonText: 'Next Ya',
+									            closeOnConfirm: false,
+										    })
+									    });
+							    	}
 							    	if (result.value>=80) {
 							    		Swal.fire({
 									    	title:"MELAYANG AKU KALO KAMU SAYANG SAMA AKU BEGINI.. ",
